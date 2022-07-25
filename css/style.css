@@ -4,7 +4,7 @@
 /* FONTES */
 @font-face {
     font-family: 'Mories';
-    src: url(../fonte);
+    src: url('../font/Mories.ttf') format('truetype');
 }
 
 /* PALETA DE CORES */
@@ -111,16 +111,38 @@ body {
     box-shadow: 0px 1px 20px rgb(0 0 0 / 49%);
 }
 
-.secao-slide .pedido-dia {}
+.secao-slide .pedido-dia {
+    padding: 4rem 1rem 1rem 1rem;
+}
 
 .secao-slide .pedido-dia h1 {
     color: var(--cor2);
+    font-family: 'Mories';
     text-align: center;
+    font-size: 2.7em;
+    font-weight: 600;
 }
 
-.secao-slide .pedido-dia h2 {}
+.secao-slide .pedido-dia h2 {
+    text-align: center;
+    font-family: 'Mories';
+    padding: 0.4rem 0;
+    font-weight: 600;
+    color: var(--cor6);
+}
 
-.secao-slide .pedido-dia p {}
+.secao-slide .pedido-dia p {
+    color: #6c5f5b;
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 0.9em;
+    max-width: 279px;
+    margin-top: 1rem;
+}
+
+.secao-slide .pedido-dia #img1 {}
+
+.secao-slide .pedido-dia #img2 {}
 
 .secao-slide .pedido-dia .botao-box {}
 
