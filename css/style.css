@@ -1,0 +1,211 @@
+/* PERMITIR ACENTUAÇÕES NO SITE */
+@charset "UTF-8";
+
+/* FONTES */
+@font-face {
+    font-family: 'Mories';
+    src: url(../fonte);
+}
+
+/* PALETA DE CORES */
+:root {
+    --cor0: #fff;
+    --cor1: #c53005;
+    --cor2: #a80002;
+    --cor3: #4C0002; /*DEGRADÊ*/
+    --cor4: #220003; /*DEGRADÊ*/
+    --cor5: #1D0000;
+    --cor6: #200000;
+}
+
+/* CONFIGURAÇÕES GLOBAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CORPO */
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.container {
+    max-width: 960px;
+    margin:  0 auto;
+}
+
+/* CABEÇALHO */
+.cabecalho {
+    background-image: linear-gradient(to top, var(--cor4), var(--cor3));
+    padding-top: 2rem;
+}
+
+.cabecalho .cabecalho-2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2.3rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.cabecalho .cabecalho-2 .img-box {
+    margin-right: 1.4rem;
+}
+
+.cabecalho .cabecalho-2 .img-box img {}
+
+/* MENU */
+.link-menu {}
+
+.link-menu .links-box {
+    margin-bottom: 2rem;
+    gap: 1.6rem;
+    padding-right: 2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.link-menu .links-box a {}
+
+.link-menu .links-box a img {}
+
+.link-menu .links-box #icone-border {
+    border-left: 1px solid var(--cor2);
+    border-right: 1px solid var(--cor2);
+    padding: 0 1.5rem;
+}
+
+.link-menu .menu-navegacao {}
+
+.link-menu .menu-navegacao .lista-navegacao {
+    display: flex;
+    list-style: none;
+}
+
+.link-menu .menu-navegacao .lista-navegacao .item-navegacao {
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+}
+
+.link-menu .menu-navegacao .lista-navegacao #item-fundo {
+    background-color: #660205;
+}
+
+.link-menu .menu-navegacao .lista-navegacao .item-navegacao:hover {
+    background-color: #660205;
+}
+
+.link-menu .menu-navegacao .lista-navegacao .item-navegacao a {
+    text-decoration: none;
+    color: #F9F0E7;
+    font-size: 1.3em;
+    font-weight: 100;
+}
+
+/* SEÇÃO SLIDE */
+.secao-slide {
+    background-image: url(../imagens/bg_slider.jpg);
+    display: flex;
+    padding: 0.5rem;
+    box-shadow: 0px 1px 20px rgb(0 0 0 / 49%);
+}
+
+.secao-slide .pedido-dia {}
+
+.secao-slide .pedido-dia h1 {
+    color: var(--cor2);
+    text-align: center;
+}
+
+.secao-slide .pedido-dia h2 {}
+
+.secao-slide .pedido-dia p {}
+
+.secao-slide .pedido-dia .botao-box {}
+
+.secao-slide .pedido-dia .botao-box button {}
+
+.secao-slide .img-slide {}
+
+.secao-slide .img-slide img {}
+
+/* SEÇÃO CARD */
+.secao-card {}
+
+.secao-card .card-box {}
+
+.secao-card .card-box h2 {}
+
+.secao-card .card-box h2 strong {}
+
+.secao-card .card-box img {}
+
+.secao-card .card-box p {}
+
+.secao-card .card-box a {}
+
+.secao-card .card-box .lista-servicos {}
+
+.secao-card .card-box .lista-servicos .item-servixo {}
+
+/* CONTEÚDO PRINCIPAL */
+.conteudo {}
+
+/* SEÇÃO PROXÍMOS EVENTOS */
+.secao-events-testimonials {}
+
+/* EVENTS */
+.secao-events-testimonials h2 {}
+
+.secao-events-testimonials .events {}
+
+.secao-events-testimonials .events .lista-events {}
+
+.secao-events-testimonials .events .lista-events .item-events {}
+
+.secao-events-testimonials .events .lista-events .item-events img {}
+
+.secao-events-testimonials .events .lista-events .item-events a {}
+
+.secao-events-testimonials .events .lista-events .item-events p {}
+
+/* TESTIMONIALS */
+.secao-events-testimonials .testimonials {}
+
+.secao-events-testimonials .testimonials .testimonials-box {}
+
+.secao-events-testimonials .testimonials .testimonials-box .number {}
+
+.secao-events-testimonials .testimonials .testimonials-box .citacao-pessoa {}
+
+.secao-events-testimonials .testimonials .testimonials-box .citacao-pessoa p {}
+
+.secao-events-testimonials .testimonials .testimonials-box .citacao-pessoa q {}
+
+.secao-events-testimonials .testimonials .testimonials-box .citacao-pessoa .img-box {}
+
+.secao-events-testimonials .testimonials .testimonials-box .citacao-pessoa .img-box img {}
+
+/* RODAPÉ */
+.rodape {}
+
+.rodape .phone-follow {}
+
+.rodape .phone-follow .phone {}
+
+.rodape .phone-follow .phone h3 {}
+
+.rodape .phone-follow .phone h3 strong {}
+
+.rodape .phone-follow .phone p {}
+
+.rodape .phone-follow .phone p a {}
+
+.rodape .phone-follow .follow {}
+
+.rodape .phone-follow .follow h3 {}
+
+.rodape .phone-follow .follow h3 a {}
+
+.rodape .phone-follow .follow h3 a img {}
