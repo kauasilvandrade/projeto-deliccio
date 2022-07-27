@@ -158,10 +158,6 @@ body {
     right: 0.3rem;
 }
 
-.secao-slide .pedido-dia .botao-box {}
-
-.secao-slide .pedido-dia .botao-box button {}
-
 .secao-slide .img-slide {}
 
 .secao-slide .img-slide img {}
@@ -256,40 +252,91 @@ body {
 }
 
 /* CONTEÚDO PRINCIPAL */
-.conteudo {}
+.conteudo {
+    background-color: #FAF3ED;
+    padding: 1.2rem 14rem 3rem 14rem;
+}
 
 /* SEÇÃO PROXÍMOS EVENTOS */
-.secao-events-testimonials {}
+.secao-events-testimonials {
+    display: flex;
+}
 
 /* EVENTS */
-.secao-events-testimonials h2 {}
+.secao-events-testimonials h2 {
+    font-weight: 100;
+    color: var(--cor6);
+    margin-bottom: 1rem;
+    font-size: 2.3em;
+}
 
 .secao-events-testimonials .events {}
 
-.secao-events-testimonials .events .lista-events {}
+.secao-events-testimonials .events .lista-events {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
 
-.secao-events-testimonials .events .lista-events .item-events {}
+.secao-events-testimonials .events .lista-events .item-events {
+    display: flex;
+    width: 299px;
+    align-items: center;
+    gap: 1.5rem;
+}
 
 .secao-events-testimonials .events .lista-events .item-events img {}
 
-.secao-events-testimonials .events .lista-events .item-events a {}
+.secao-events-testimonials .events .lista-events .item-events .a-span {}
 
-.secao-events-testimonials .events .lista-events .item-events p {}
+.secao-events-testimonials .events .lista-events .item-events .a-span a {
+    font-size: 0.9em;
+    color: var(--cor2);
+    text-decoration: none;
+}
+
+.secao-events-testimonials .events .lista-events .item-events .a-span a:hover {
+    text-decoration: underline;
+}
+
+.secao-events-testimonials .events .lista-events .item-events .a-span span   {
+    font-size: 0.9em;
+    line-height: 1.5em;
+}
 
 /* TESTIMONIALS */
 .secao-events-testimonials .testimonials {}
 
-.secao-events-testimonials .testimonials .testimonials-box {}
+.secao-events-testimonials .testimonials .testimonials-box {
+    width: 237px;
+}
 
-.secao-events-testimonials .testimonials .testimonials-box .number {}
+.secao-events-testimonials .testimonials .testimonials-box .number-citacao {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
 
-.secao-events-testimonials .testimonials .testimonials-box .citacao-pessoa {}
+.secao-events-testimonials .testimonials .testimonials-box .number-citacao .number {
+    background-color: var(--cor2);
+    color: white;
+    font-weight: bold;
+    font-size: 1.6em;
+    padding: 0.5rem 0.9rem;
+}
 
-.secao-events-testimonials .testimonials .testimonials-box .citacao-pessoa p {}
+.secao-events-testimonials .testimonials .testimonials-box .number-citacao p {
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+    line-height: 1.6em;
+}
 
-.secao-events-testimonials .testimonials .testimonials-box .citacao-pessoa q {}
+.secao-events-testimonials .testimonials .testimonials-box q {}
 
-.secao-events-testimonials .testimonials .testimonials-box .citacao-pessoa .img-box {}
+.secao-events-testimonials .testimonials .testimonials-box .img-box {
+    margin-left: 4rem;
+}
 
 .secao-events-testimonials .testimonials .testimonials-box .citacao-pessoa .img-box img {}
 
