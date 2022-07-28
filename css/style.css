@@ -341,24 +341,61 @@ body {
 .secao-events-testimonials .testimonials .testimonials-box .citacao-pessoa .img-box img {}
 
 /* RODAPÉ */
-.rodape {}
+.rodape {
+    background-image: url(../imagens/bg_slider.jpg);
+    padding: 1.2rem 14rem 3rem 14rem;
+}
 
-.rodape .phone-follow {}
+.rodape .phone-follow {
+    display: flex;
+    align-items: center;
+    gap: 14rem;
+}
 
 .rodape .phone-follow .phone {}
 
-.rodape .phone-follow .phone h3 {}
+.rodape .phone-follow .phone h3 {
+    font-weight: 100;
+    margin-bottom: 1rem;
+    color: var(--cor2);
+    font-size: 1.4em;
+}
 
-.rodape .phone-follow .phone h3 strong {}
+.rodape .phone-follow .phone h3 strong {
+    color: var(--cor6);
+    font-weight: 100;
+}
 
-.rodape .phone-follow .phone p {}
+.rodape .phone-follow .phone p {
+    font-size: 0.9em;
+    line-height: 1.4rem;
+    color: #3c424e;
+}
 
-.rodape .phone-follow .phone p a {}
+.rodape .phone-follow .phone p a {
+    color: var(--cor1);
+    text-decoration: none;
+}
+
+.rodape .phone-follow .phone p a:hover {
+    text-decoration: underline;
+}
 
 .rodape .phone-follow .follow {}
 
-.rodape .phone-follow .follow h3 {}
+.rodape .phone-follow .follow h3 {
+    font-weight: 100;
+    margin-bottom: 1rem;
+    color: var(--cor6);
+    font-size: 1.4em;
+}
 
-.rodape .phone-follow .follow h3 a {}
+.rodape .phone-follow .follow .a-img {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: row;
+}
 
-.rodape .phone-follow .follow h3 a img {}
+.rodape .phone-follow .follow .a-img a {}
+
+.rodape .phone-follow .follow .a-img a img {}
