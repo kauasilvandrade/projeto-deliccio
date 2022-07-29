@@ -504,6 +504,11 @@ body {
         width: 428px;
     }
 
+    .secao-cards .img-fundo .card-box > a {
+        width: 100%;
+        text-align: center;
+    }
+
     .secao-events-testimonials {
         display: flex;
         flex-direction: column;
@@ -550,6 +555,7 @@ body {
     .rodape .phone-follow .phone {
         width: 80%;
     }
+
 }
 
 @media screen and (max-width: 576px) {
@@ -575,11 +581,6 @@ body {
 
     .link-menu .menu-navegacao .lista-navegacao {
         top: 0;
-    }
-
-    .secao-cards .img-fundo .card-box > a {
-        width: 100%;
-        text-align: center;
     }
 }
 
