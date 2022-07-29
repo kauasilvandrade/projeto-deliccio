@@ -79,6 +79,33 @@ body {
 
 .link-menu .menu-navegacao {}
 
+/* BOTÃO MOBILE */
+.link-menu .menu-navegacao input[type="checkbox"] {
+    display: none;
+}
+
+.link-menu .menu-navegacao label {}
+
+.link-menu .menu-navegacao label .img-mark {
+    color: white;
+    position: absolute;
+    font-size: 2.2em;
+    top: 5.1rem;
+    right: 4rem;
+    display: none;
+}
+
+.link-menu .menu-navegacao label .img-mark-off {
+    z-index: 2;
+    position: fixed;
+    top: 5.2rem;
+    right: 1rem;
+    opacity: 0;
+    font-size: 2.2em;
+    transition: all .5s;
+    color: white;
+}
+
 .link-menu .menu-navegacao .lista-navegacao {
     display: flex;
     list-style: none;
@@ -150,7 +177,7 @@ body {
 
 .secao-slide .pedido-dia .p-img #img1 {
     position: absolute;
-    left: 0;
+    right: 16rem;
 }
 
 .secao-slide .pedido-dia .p-img #img2 {
@@ -160,7 +187,9 @@ body {
 
 .secao-slide .img-slide {}
 
-.secao-slide .img-slide img {}
+.secao-slide .img-slide img {
+    width: 100%;
+}
 
 /* SEÇÃO CARD */
 .secao-cards {
@@ -171,7 +200,7 @@ body {
 
 
 .secao-cards .img-fundo {
-    width: 300px;
+    width: 31%;
     height: 380px;
     background-image: url(../imagens/box_bg.png);
     background-color: #2c0000;
@@ -196,6 +225,7 @@ body {
 
 .secao-cards .img-fundo .card-box img {
     margin: 1rem 0;
+    width: 100%;
 }
 
 .secao-cards .img-fundo .card-box p {
@@ -254,7 +284,7 @@ body {
 /* CONTEÚDO PRINCIPAL */
 .conteudo {
     background-color: #FAF3ED;
-    padding: 1.2rem 14rem 3rem 14rem;
+    padding: 1.2rem 0rem 3rem 0rem;
 }
 
 /* SEÇÃO PROXÍMOS EVENTOS */
@@ -343,13 +373,13 @@ body {
 /* RODAPÉ */
 .rodape {
     background-image: url(../imagens/bg_slider.jpg);
-    padding: 1.2rem 14rem 3rem 14rem;
+    padding: 1.2rem 0rem 3rem 0rem;
 }
 
 .rodape .phone-follow {
     display: flex;
     align-items: center;
-    gap: 14rem;
+    gap: 20rem;
 }
 
 .rodape .phone-follow .phone {}
@@ -399,3 +429,156 @@ body {
 .rodape .phone-follow .follow .a-img a {}
 
 .rodape .phone-follow .follow .a-img a img {}
+
+@media screen and (max-width: 967px) {
+
+    .link-menu .menu-navegacao input[type="checkbox"]:checked ~ .lista-navegacao {
+       right: 0;
+    }
+
+    .link-menu .menu-navegacao input[type="checkbox"]:checked ~ label .img-mark-off {
+        opacity: 1;
+     }
+
+    .link-menu .menu-navegacao label .img-mark {
+        display: block;
+    }
+
+    .link-menu .menu-navegacao .lista-navegacao {
+        flex-direction: column;
+        position: fixed;
+        width: 16rem;
+        background-color: var(--cor3);
+        height: 100vh;
+        right: -100%;
+        top: 5rem;
+        z-index: 1;
+        transition: all .5s;
+    }
+
+    .link-menu .menu-navegacao .lista-navegacao .item-navegacao {
+        padding: 0.5rem;
+        margin: 0;
+        border-bottom: 1px solid var(--cor0);
+        border-top: 1px solid var(--cor0);
+    }
+
+    .secao-cards .img-fundo {
+        height: 441px;
+    }
+    
+}
+
+@media screen and (max-width: 892px) {
+    .secao-slide {
+        flex-direction: column;
+        width: 90%;
+        margin: auto auto 2rem auto ;
+        padding: 1rem;
+    }
+
+    .secao-slide .pedido-dia {
+        padding: 1rem
+    }
+
+    .secao-slide .pedido-dia .p-img p {
+        max-width: unset;
+    }
+    
+    .secao-slide .pedido-dia .p-img #img1 {
+        right: 100%;
+    }
+
+    .secao-slide .pedido-dia .p-img #img2 {
+        right: 0%;
+        top: 88%;
+    }
+
+    .secao-cards {
+        flex-direction: column;
+    }
+
+    .secao-cards .img-fundo {
+        margin-bottom: 2rem;
+        height: 420px;
+        width: 428px;
+    }
+
+    .secao-events-testimonials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secao-events-testimonials h2 {
+        text-align: center;
+    }
+
+    .secao-events-testimonials .events {
+        margin-bottom: 2rem;
+    }
+
+    .secao-events-testimonials .events .lista-events {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secao-events-testimonials .events .lista-events .item-events {
+        width: 80%;
+    }
+    
+    .secao-events-testimonials .testimonials {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .secao-events-testimonials .testimonials .testimonials-box {    
+        margin-bottom: 2rem;
+        width: 80%;
+    }
+
+    .rodape .phone-follow {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        flex-direction: column;
+    }
+
+    .rodape .phone-follow .phone {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    
+    .cabecalho .cabecalho-2 .img-box img {
+        width: 190px;
+    }
+
+    .link-menu .links-box {
+        display: none;
+    }
+
+    .link-menu .menu-navegacao label .img-mark {
+        top: 3.1rem;
+        right: 1.7rem;
+    }
+
+    .link-menu .menu-navegacao label .img-mark-off {
+        top: 0.4rem;
+        right: 1.5rem;
+    }
+
+    .link-menu .menu-navegacao .lista-navegacao {
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .secao-cards .img-fundo {
+        width: 330px; 
+    }
+}
