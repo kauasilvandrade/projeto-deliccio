@@ -554,6 +554,7 @@ body {
 
 @media screen and (max-width: 576px) {
     
+
     .cabecalho .cabecalho-2 .img-box img {
         width: 190px;
     }
@@ -575,6 +576,11 @@ body {
     .link-menu .menu-navegacao .lista-navegacao {
         top: 0;
     }
+
+    .secao-cards .img-fundo .card-box > a {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -582,8 +588,4 @@ body {
         width: 330px; 
     }
 
-    .secao-cards .img-fundo .card-box > a {
-        width: 100%;
-        text-align: center;
-    }
 }
