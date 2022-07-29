@@ -581,4 +581,9 @@ body {
     .secao-cards .img-fundo {
         width: 330px; 
     }
+
+    .secao-cards .img-fundo .card-box > a {
+        width: 100%;
+        text-align: center;
+    }
 }
