@@ -111,24 +111,22 @@ body {
     list-style: none;
 }
 
-.link-menu .menu-navegacao .lista-navegacao .item-navegacao {
-    padding: 0.5rem;
-    margin: 0 0.5rem;
-}
-
-.link-menu .menu-navegacao .lista-navegacao #item-fundo {
-    background-color: #660205;
-}
-
-.link-menu .menu-navegacao .lista-navegacao .item-navegacao:hover {
-    background-color: #660205;
-}
+.link-menu .menu-navegacao .lista-navegacao .item-navegacao {}
 
 .link-menu .menu-navegacao .lista-navegacao .item-navegacao a {
     text-decoration: none;
     color: #F9F0E7;
-    font-size: 1.3em;
+    font-size: 1.3em;    padding: 0.5rem;
+    margin: 0 0.5rem;
     font-weight: 100;
+}
+
+.link-menu .menu-navegacao .lista-navegacao .item-navegacao #item-fundo {
+    background-color: #660205;
+}
+
+.link-menu .menu-navegacao .lista-navegacao .item-navegacao a:hover {
+    background-color: #660205;
 }
 
 /* SEÇÃO SLIDE */
@@ -457,10 +455,14 @@ body {
     }
 
     .link-menu .menu-navegacao .lista-navegacao .item-navegacao {
-        padding: 0.5rem;
-        margin: 0;
         border-bottom: 1px solid var(--cor0);
         border-top: 1px solid var(--cor0);
+    }
+    
+    .link-menu .menu-navegacao .lista-navegacao .item-navegacao a {
+        margin: 0;
+        width: 100%;
+        display: block;
     }
 
     .secao-cards .img-fundo {
