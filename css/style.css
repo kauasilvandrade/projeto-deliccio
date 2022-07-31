@@ -124,6 +124,7 @@ body {
 
 .link-menu .menu-navegacao .lista-navegacao .item-navegacao #item-fundo {
     background-color: #660205;
+    padding: 0.5rem;
 }
 
 .link-menu .menu-navegacao .lista-navegacao .item-navegacao a:hover {
@@ -580,10 +581,6 @@ body {
     .link-menu .menu-navegacao label .img-mark-off {
         top: 0.4rem;
         right: 1.5rem;
-    }
-
-    .link-menu .menu-navegacao .lista-navegacao {
-        top: 0;
     }
 }
 
