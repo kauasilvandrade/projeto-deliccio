@@ -45,6 +45,10 @@ body {
     margin: 1rem 0;
 }
 
+#botao-proposal {
+    width: 160px;
+}
+
 /* SEÇÃO SPECIALS */
 .secao-specials {}
 
@@ -151,6 +155,10 @@ body {
 @media screen and (max-width: 450px) {
     .secao-cards .img-fundo {
         width: 330px;
+    }
+
+    #botao-proposal {
+        width: 100%;
     }
 
 }
