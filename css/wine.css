@@ -1,0 +1,70 @@
+/* PERMITIR ACENTUAÇÕES NO SITE */
+@charset "UTF-8";
+
+/* FONTES */
+@font-face {
+    font-family: 'Mories';
+    src: url('../font/Mories.ttf') format('truetype');
+}
+
+/* PALETA DE CORES */
+:root {
+    --cor0: #fff;
+    --cor1: #c53005;
+    --cor2: #a80002;
+    --cor3: #4C0002; /*DEGRADÊ*/
+    --cor4: #220003; /*DEGRADÊ*/
+    --cor5: #1D0000;
+    --cor6: #200000;
+}
+
+/* CONFIGURAÇÕES GLOBAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CORPO */
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.container {
+    max-width: 960px;
+    margin:  0 auto;
+}
+
+.secao-cards .img-fundo .card-box h2 {
+    font-weight: 100;
+    font-size: 2em;
+}
+
+.secao-specials .prato-especial {
+    display: flex;
+    align-items: unset;
+    margin-top: 1rem;
+}
+
+.secao-specials .prato-especial #prato-3 {
+    padding-left: 3rem;
+    padding-top: 3.4rem;
+}
+
+/* LISTA DE VINHOS */
+.prato .lista-vinho {}
+
+.prato .lista-vinho .item-vinho {
+    list-style: none;
+}
+
+.prato .lista-vinho .item-vinho a {
+    color: var(--cor5);
+    text-decoration: none;
+    text-decoration: none;
+    font-size: 0.9em;
+    padding-left: 1rem;
+    background-image: url(../imagens/marker_2.gif);
+    background-repeat: no-repeat;
+    background-position: 2px 6px;
+}
