@@ -1,0 +1,155 @@
+/* PERMITIR ACENTUAÇÕES NO SITE */
+@charset "UTF-8";
+
+/* FONTES */
+@font-face {
+    font-family: 'Mories';
+    src: url('../font/Mories.ttf') format('truetype');
+}
+
+/* PALETA DE CORES */
+:root {
+    --cor0: #fff;
+    --cor1: #c53005;
+    --cor2: #a80002;
+    --cor3: #4C0002; /*DEGRADÊ*/
+    --cor4: #220003; /*DEGRADÊ*/
+    --cor5: #1D0000;
+    --cor6: #200000;
+}
+
+/* CONFIGURAÇÕES GLOBAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CORPO */
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.container {
+    max-width: 960px;
+    margin:  0 auto;
+}
+
+/* SEÇAO CARD */
+.secao-cards .img-fundo .card-box h2 {}
+
+.secao-cards .img-fundo .card-box h2 strong {}
+
+.secao-cards .img-fundo .card-box h3 {
+    margin: 0.4rem 0;
+    font-size: 1em;
+}
+
+.secao-cards .img-fundo .card-box p {}
+
+/* SEÇÃO COOKBOOK - FOOD DELIVER */
+.secao-cookbook-delivery  {
+    display: flex;
+    gap: 3rem;
+}
+
+/* COOKBOOK */
+.secao-cookbook-delivery .cookbook {}
+
+.secao-cookbook-delivery h2 {
+    font-weight: 100;
+    color: var(--cor6);
+    margin-bottom: 1rem;
+    font-size: 2.3em;
+}
+
+.secao-cookbook-delivery .cookbook .receita {
+    display: flex;
+    border-right: 1px solid #E1DBD6;
+    padding-right: 4rem;
+    gap: 1.2rem;
+    padding-bottom: 1rem;
+}
+
+.secao-cookbook-delivery .cookbook .receita .img-box {}
+
+.secao-cookbook-delivery .cookbook .receita .img-box img {}
+
+.secao-cookbook-delivery .cookbook .receita .descricao {
+    width: 414px;
+}
+
+.secao-cookbook-delivery .cookbook .receita .descricao a {
+    font-size: 0.9em;
+    color: var(--cor2);
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.secao-cookbook-delivery .cookbook .receita .descricao a:hover {
+    text-decoration: underline;
+}
+
+.secao-cookbook-delivery .cookbook .receita .descricao p {
+    font-size: 0.9em;
+    max-width: 400px;
+    line-height: 1.5em;
+}
+
+/* FOOD DELIVERY */
+.secao-cookbook-delivery .food-delivery {}
+
+.secao-cookbook-delivery .food-delivery .img-box {}
+
+.secao-cookbook-delivery .food-delivery .img-box img {}
+
+.secao-cookbook-delivery .food-delivery p {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    margin: 0.7rem 0;
+}
+
+@media screen and (max-width: 943px) {
+    .secao-cookbook-delivery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .secao-cookbook-delivery h2 {
+        text-align: center;
+    }
+
+    .secao-cookbook-delivery .cookbook {
+        width: 100%;
+    }
+
+    .secao-cookbook-delivery .cookbook .receita {
+        display: flex;
+        border-right: none;
+        padding-right: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secao-cookbook-delivery .cookbook .receita .descricao {
+        text-align: center;
+        width: 100%;
+    }
+
+    .secao-cookbook-delivery .food-delivery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secao-cookbook-delivery .food-delivery p {
+        font-size: 0.9em;
+        line-height: 1.5em;
+        margin: 0.7rem 0;
+        max-width: 350px;
+        text-align: center;
+    }
+}
