@@ -93,7 +93,7 @@ body {
 
 .secao-cookbook-delivery .cookbook .receita .descricao p {
     font-size: 0.9em;
-    max-width: 350px;
+    max-width: 400px;
     line-height: 1.5em;
 }
 
@@ -137,6 +137,12 @@ body {
     .secao-cookbook-delivery .cookbook .receita .descricao {
         text-align: center;
         width: 100%;
+    }
+
+    .secao-cookbook-delivery .cookbook .receita .descricao p {
+        font-size: 0.9em;
+        max-width: 350px;
+        line-height: 1.5em;
     }
 
     .secao-cookbook-delivery .food-delivery {
