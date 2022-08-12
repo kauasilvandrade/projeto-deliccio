@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contacts.css">
     <script src="https://kit.fontawesome.com/ca4876cb59.js" crossorigin="anonymous"></script>
     <title>Contacts</title>
 </head>
@@ -64,7 +65,7 @@
                         <ul class="lista-navegacao">
 
                             <!-- ITEM NAVEGAÇÃO -->
-                            <li class="item-navegacao"><a href="#" id="item-fundo">Restaurant</a></li>
+                            <li class="item-navegacao"><a href="index.html">Restaurant</a></li>
 
                             <li class="item-navegacao"><a href="cuisine.html">Cuisine</a></li>
 
@@ -72,7 +73,7 @@
 
                             <li class="item-navegacao"><a href="cookbook.html">CookBook</a></li>
 
-                            <li class="item-navegacao"><a href="contacts.html">Contacts</a></li>
+                            <li class="item-navegacao"><a href="#" id="item-fundo">Contacts</a></li>
 
                         </ul>
 
@@ -85,45 +86,50 @@
             <!-- SEÇÃO CONTATO -->
             <section class="secao-contato">
 
-                <h2><strong>Contact</strong> Form</h2>
+                <div class="fundo">
 
-                <!-- FORMULÁRIO -->
-                <form class="form-box">
+                    <h2><strong>Contact</strong> Form</h2>
+
+                     <!-- FORMULÁRIO -->
+                     <form class="form-box">
 
                     <!-- INPUT -->
                     <div class="input-box">
 
-                        <label for="name">Your Name:</label>
+                        <label for="name" id="label-1">Your Name:</label>
 
-                        <input type="text">
+                        <input type="text" id="name" required>
 
                     </div>
 
                     <!-- INPUT -->
                     <div class="input-box">
 
-                        <label for="email">Your E-mail:</label>
+                        <label for="email" id="label-2">Your E-mail:</label>
 
-                        <input type="text">
+                        <input type="text" id="email" required>
 
                     </div>
 
                     <!-- TEXT ARE -->
                     <div class="text-box">
 
-                        <label for="text-are">Your Message:</label>
+                        <label for="text">Your Message:</label>
 
-                        <textarea name="message" id="text-are" cols="30" rows="10"></textarea>
+                        <textarea name="message" id="text" cols="30" rows="10"></textarea>
 
                     </div>
 
-                </form>
+                     </form>
 
-                <div class="botoes">
+                     <!-- BOTÕES -->
+                     <div class="botoes">
 
                     <a href="#">Clear</a>
 
                     <a href="#">Send</a>
+
+                     </div>
 
                 </div>
 
@@ -139,8 +145,10 @@
         <!-- CONTAINER -->
         <div class="container">
 
+            <!-- SEÇÃO CONTATO E INFO -->
             <section class="secao-contact-info">
 
+                <!-- OUR CONTACTS -->
                 <div class="our-contact-box">
 
                     <h2>Our Contacts</h2>
@@ -165,9 +173,10 @@
 
                 </div>
 
+                <!-- MISCELLANEOUS INFO -->
                 <div class="miscellaneous-info-box">
 
-                    <h2>Our Contacts</h2>
+                    <h2>Miscellaneous Info</h2>
 
                     <p class="p-margin">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 

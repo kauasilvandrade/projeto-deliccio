@@ -1,0 +1,257 @@
+/* PERMITIR ACENTUAÇÕES NO SITE */
+@charset "UTF-8";
+
+/* FONTES */
+@font-face {
+    font-family: 'Mories';
+    src: url('../font/Mories.ttf') format('truetype');
+}
+
+/* PALETA DE CORES */
+:root {
+    --cor0: #fff;
+    --cor1: #c53005;
+    --cor2: #a80002;
+    --cor3: #4C0002; /*DEGRADÊ*/
+    --cor4: #220003; /*DEGRADÊ*/
+    --cor5: #1D0000;
+    --cor6: #200000;
+}
+
+/* CONFIGURAÇÕES GLOBAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CORPO */
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.container {
+    max-width: 960px;
+    margin:  0 auto;
+}
+
+/*  SEÇÃO CONTATO  */
+.secao-contato {
+    background-image: url(../imagens/box_bg.png);
+    background-color: #2c0000;
+}
+
+.secao-contato .fundo {
+    background-image: url(../imagens/box_top2.png);
+    padding: 1.2rem 2rem;
+    background-repeat: no-repeat;
+}
+
+.secao-contato .fundo h2 {
+    font-weight: 100;
+    font-size: 2.2em;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.secao-contato .fundo h2 strong {
+    color: var(--cor2);
+    font-weight: 100;
+}
+
+.secao-contato .fundo .form-box {}
+
+.secao-contato .fundo .form-box .input-box {
+    margin-bottom: 0.6rem;
+}
+
+.secao-contato .fundo .form-box .input-box label {
+    color: white;
+    font-size: 0.9em;
+}
+
+.secao-contato .fundo .form-box .input-box #label-1 {
+    margin-right: 2.5rem;
+}
+
+.secao-contato .fundo .form-box .input-box #label-2 {
+    margin-right: 2.1rem;
+}
+
+
+.secao-contato .fundo .form-box .input-box input {
+    border: none;
+    width: 399px;
+    height: 18px;
+    outline: none;
+}
+
+.secao-contato .fundo .form-box .text-box {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.secao-contato .fundo .form-box .text-box label {
+    color: white;
+    font-size: 0.9em;
+}
+
+.secao-contato .fundo .form-box .text-box textarea {
+    border: none;
+    width: 775px;
+    height: 163px;
+    outline: none;
+}
+
+.secao-contato .fundo .botoes {
+    margin: 1rem 0;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
+.secao-contato .fundo .botoes a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    padding: 0.5rem 0.7rem;
+    background-color: var(--cor2);
+}
+
+.secao-contato .fundo .botoes a:hover {
+    color: var(--cor6);
+    background-color: var(--cor0);
+}
+
+/* SEÇÃO CONTATO E INFO */
+.secao-contact-info {
+    display: flex;
+}
+
+/* OUR CONTACTS */
+.secao-contact-info .our-contact-box {
+    width: 750px;
+}
+
+.secao-contact-info .our-contact-box h2 {
+    font-weight: 100;
+    color: var(--cor6);
+    margin-bottom: 1rem;
+    font-size: 2.3em;
+}
+
+.secao-contact-info .our-contact-box .descricao-contato {
+    border-right: 1px solid #E1DBD6;
+}
+
+.secao-contact-info .our-contact-box .descricao-contato p {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    color: var(--cor6);
+}
+
+.secao-contact-info .p-margin {
+    margin-bottom: 1rem;
+}
+
+.secao-contact-info .our-contact-box .descricao-contato .endereco {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    color: var(--cor6);
+    font-style: normal;
+}
+
+.secao-contact-info .our-contact-box .descricao-contato .endereco a {
+    color: var(--cor2);
+    text-decoration: none;
+}
+
+.secao-contact-info .our-contact-box .descricao-contato .endereco a:hover {
+    text-decoration: underline;
+}
+
+/* MISCELLANEOUS INFO */
+.miscellaneous-info-box {
+    padding-left: 2.5rem;
+}
+
+.miscellaneous-info-box h2 {
+    font-weight: 100;
+    color: var(--cor6);
+    margin-bottom: 1rem;
+    font-size: 2.3em;
+}
+
+.miscellaneous-info-box p {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    color: var(--cor6);
+}
+
+@media screen and (max-width: 808px) {
+    .secao-contato .fundo h2 {
+        text-align: center;
+    }   
+
+    .secao-contato .fundo .form-box .input-box {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .secao-contato .fundo .form-box .input-box label {
+        color: white;
+        font-size: 0.9em;
+        margin-bottom: 0.5rem;
+    }
+
+    .secao-contato .fundo .form-box .input-box input {
+        width: 100%;
+    }
+
+    .secao-contato .fundo .form-box .text-box {
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secao-contato .fundo .form-box .text-box label {
+        color: white;
+        margin-bottom: 0.5rem;
+        font-size: 0.9em;
+    }
+
+    .secao-contato .fundo .form-box .text-box textarea {
+        width: 100%;
+    }
+
+    .secao-contato .fundo .botoes {
+        text-align: center;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+
+    .secao-contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secao-contact-info .our-contact-box {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .secao-contact-info .our-contact-box .descricao-contato {
+        border-right: none;
+    }
+
+    .miscellaneous-info-box {
+        padding-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+}
