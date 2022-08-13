@@ -136,6 +136,7 @@ body {
     .secao-cookbook-delivery .cookbook .receita .descricao {
         text-align: center;
         display: flex;
+        width: 350px;
         flex-direction: column;
         align-items: center;
     }
