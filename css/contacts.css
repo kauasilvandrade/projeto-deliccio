@@ -110,15 +110,16 @@ body {
     justify-content: flex-end;
 }
 
-.secao-contato .fundo .botoes a {
+.secao-contato .fundo .form-box .botoes input {
     text-decoration: none;
     color: white;
     font-size: 1.2em;
     padding: 0.5rem 0.7rem;
+    border: none;
     background-color: var(--cor2);
 }
 
-.secao-contato .fundo .botoes a:hover {
+.secao-contato .fundo .form-box .botoes input:hover {
     color: var(--cor6);
     background-color: var(--cor0);
 }
