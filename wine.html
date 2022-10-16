@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/ca4876cb59.js" crossorigin="anonymous"></script>
     <title>Wine</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
 
     <!-- CABEÇALHO -->
     <header class="cabecalho">
@@ -52,15 +52,13 @@
                     <nav class="menu-navegacao">
 
                         <!-- BOTÃO MOBILE -->
-                        <input type="checkbox" id="check">
-
-                        <label for="check">
-
+                        <button class="btn-open" onclick="abrirMenu()">
                             <i class="fa fa-bars img-mark"></i>
+                        </button>
 
+                        <button class="btn-close" onclick="fecharMenu()">
                             <i class="fa-solid fa-xmark img-mark-off"></i>
-
-                        </label>
+                        </button>
 
                         <!-- LISTA DE NAVEGAÇÃO -->
                         <ul class="lista-navegacao">
@@ -342,6 +340,8 @@
         </div>
 
     </footer>
+
+    <script src="js/script.js"></script>
     
 </body>
 </html>

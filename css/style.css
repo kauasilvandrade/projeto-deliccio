@@ -80,31 +80,21 @@ body {
 .link-menu .menu-navegacao {}
 
 /* BOTÃO MOBILE */
-.link-menu .menu-navegacao input[type="checkbox"] {
+.link-menu .menu-navegacao .btn-open {
+    border: none;
+    background-color: transparent;
     display: none;
 }
 
-.link-menu .menu-navegacao label {}
-
-.link-menu .menu-navegacao label .img-mark {
-    color: white;
-    position: absolute;
-    font-size: 2.2em;
-    top: 5.1rem;
-    right: 4rem;
+.link-menu .menu-navegacao .btn-close {
+    border: none;
+    background-color: transparent;
     display: none;
 }
 
-.link-menu .menu-navegacao label .img-mark-off {
-    z-index: 2;
-    position: fixed;
-    top: 0rem;
-    right: 1rem;
-    opacity: 0;
-    font-size: 2.2em;
-    transition: all .5s;
-    color: white;
-}
+.link-menu .menu-navegacao .btn-open .img-mark {}
+
+.link-menu .menu-navegacao .btn-close .img-mark-off {}
 
 .link-menu .menu-navegacao .lista-navegacao {
     display: flex;
@@ -300,55 +290,55 @@ body {
     font-size: 2.3em;
 }
 
-.secao-events-testimonials .events {}
+.events {}
 
-.secao-events-testimonials .events .lista-events {
+.events .lista-events {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
 }
 
-.secao-events-testimonials .events .lista-events .item-events {
+.events .lista-events .item-events {
     display: flex;
     width: 299px;
     align-items: center;
     gap: 1.5rem;
 }
 
-.secao-events-testimonials .events .lista-events .item-events img {}
+.events .lista-events .item-events img {}
 
-.secao-events-testimonials .events .lista-events .item-events .a-span {}
+.events .lista-events .item-events .a-span {}
 
-.secao-events-testimonials .events .lista-events .item-events .a-span a {
+.events .lista-events .item-events .a-span a {
     font-size: 0.9em;
     color: var(--cor2);
     text-decoration: none;
 }
 
-.secao-events-testimonials .events .lista-events .item-events .a-span a:hover {
+.events .lista-events .item-events .a-span a:hover {
     text-decoration: underline;
 }
 
-.secao-events-testimonials .events .lista-events .item-events .a-span span   {
+.events .lista-events .item-events .a-span span   {
     font-size: 0.9em;
     line-height: 1.5em;
 }
 
 /* TESTIMONIALS */
-.secao-events-testimonials .testimonials {}
+.testimonials {}
 
-.secao-events-testimonials .testimonials .testimonials-box {
+.testimonials .testimonials-box {
     width: 237px;
 }
 
-.secao-events-testimonials .testimonials .testimonials-box .number-citacao {
+.testimonials .testimonials-box .number-citacao {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
-.secao-events-testimonials .testimonials .testimonials-box .number-citacao .number {
+.testimonials .testimonials-box .number-citacao .number {
     background-color: var(--cor2);
     color: white;
     font-weight: bold;
@@ -356,19 +346,19 @@ body {
     padding: 0.5rem 0.9rem;
 }
 
-.secao-events-testimonials .testimonials .testimonials-box .number-citacao p {
+.testimonials .testimonials-box .number-citacao p {
     font-size: 0.9rem;
     margin-bottom: 0.4rem;
     line-height: 1.6em;
 }
 
-.secao-events-testimonials .testimonials .testimonials-box q {}
+.testimonials .testimonials-box q {}
 
-.secao-events-testimonials .testimonials .testimonials-box .img-box {
+.testimonials .testimonials-box .img-box {
     margin-left: 4rem;
 }
 
-.secao-events-testimonials .testimonials .testimonials-box .citacao-pessoa .img-box img {}
+.testimonials .testimonials-box .citacao-pessoa .img-box img {}
 
 /* RODAPÉ */
 .rodape {
@@ -432,39 +422,72 @@ body {
 
 @media screen and (max-width: 967px) {
 
-    .link-menu .menu-navegacao input[type="checkbox"]:checked ~ .lista-navegacao {
-       right: 0;
+    .link-menu {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
     }
 
-    .link-menu .menu-navegacao input[type="checkbox"]:checked ~ label .img-mark-off {
-        opacity: 1;
-     }
-
-    .link-menu .menu-navegacao label .img-mark {
+    .link-menu .menu-navegacao .btn-open {
         display: block;
+        cursor: pointer;
+    }
+    
+    .link-menu .menu-navegacao .btn-close {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .link-menu .menu-navegacao .btn-open .img-mark {
+        color: white;
+        font-size: 3em;
+        display: block;
+        padding-right: 1.6rem;
+    }
+    
+    .link-menu .menu-navegacao .btn-close .img-mark-off {
+        z-index: 2;
+        position: fixed;
+        top: 0rem;
+        left: -100%;
+        font-size: 3em;
+        color: white;
+        transition: .5s;
     }
 
     .link-menu .menu-navegacao .lista-navegacao {
-        flex-direction: column;
         position: fixed;
-        width: 16rem;
-        background-color: var(--cor3);
+        left: -100%;
+        top: 0;
+        width: 20rem;
         height: 100vh;
-        right: -100%;
-        top: 0rem;
+        flex-direction: column;
+        background-color: var(--cor3);
         z-index: 1;
-        transition: all .5s;
-    }
-
-    .link-menu .menu-navegacao .lista-navegacao .item-navegacao {
-        border-bottom: 1px solid var(--cor0);
-        border-top: 1px solid var(--cor0);
+        text-align: center;
+        transition: .5s;
     }
     
+    /* CLASSE ATIVADA COM JAVASCRIPT */
+    .link-menu .menu-navegacao .btn-close.ativado .img-mark-off {
+        left: 17.3rem;
+    }
+
+    .link-menu .menu-navegacao .lista-navegacao.ativado {
+        left: 0;
+    }
+
     .link-menu .menu-navegacao .lista-navegacao .item-navegacao a {
         margin: 0;
+        border-bottom: 1px solid var(--cor0);
         width: 100%;
+        padding: 0.7rem;
         display: block;
+    }
+
+    .link-menu .menu-navegacao .lista-navegacao .item-navegacao #item-fundo {
+        background-color: #660205;
+        padding: 0.7rem;
     }
 
     .secao-cards .img-fundo {
@@ -546,7 +569,7 @@ body {
 
     .secao-events-testimonials .testimonials .testimonials-box {    
         margin-bottom: 2rem;
-        width: 80%;
+        width: 100%;
     }
 
     .rodape .phone-follow {
@@ -564,7 +587,6 @@ body {
 
 @media screen and (max-width: 576px) {
     
-
     .cabecalho .cabecalho-2 .img-box img {
         width: 190px;
     }
@@ -573,20 +595,17 @@ body {
         display: none;
     }
 
-    .link-menu .menu-navegacao label .img-mark {
-        top: 3.1rem;
-        right: 1.7rem;
-    }
-
-    .link-menu .menu-navegacao label .img-mark-off {
-        top: 0.4rem;
-        right: 1.5rem;
+    .link-menu .menu-navegacao .btn-open .img-mark {
+        color: white;
+        font-size: 3em;
+        display: block;
+        padding-right: 0;
     }
 }
 
 @media screen and (max-width: 450px) {
     .secao-cards .img-fundo {
-        width: 330px; 
+        max-width: 310px; 
     }
 
 }

@@ -208,6 +208,7 @@ body {
 
     .secao-contato .fundo .form-box .input-box input {
         width: 100%;
+        height: 35px;
     }
 
     .secao-contato .fundo .form-box .text-box {
